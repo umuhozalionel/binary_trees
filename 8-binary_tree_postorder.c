@@ -7,10 +7,10 @@
  */
 void trees_inorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (tree && func)
-    {
-        trees_inorder(tree->left, func);
-        func(tree->n);
-        trees_inorder(tree->right, func);
-    }
+	if (tree && func)
+	{
+		trees_inorder(tree->left, func);
+		func(tree->n);
+		trees_inorder(tree->right, func);
+	}
 }
